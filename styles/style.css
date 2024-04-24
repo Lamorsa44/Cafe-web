@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+header {
+    display: flexbox;
+    border: 0px solid rgb(245, 124, 144);
+    background: linear-gradient(360deg, black, rgba(34, 34, 34, 0)), 
+    url("/resources/coffe-banner-good.jpg");
+    background-size: auto, cover;
+}
+
+nav { 
+    display: flex;
+    min-width: auto;
+    overflow: auto;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0px;
+    padding: 1em;
+    border: 0px solid black;
+    
+}
+
+nav > a {
+    color: hsl(30, 100%, 66%);
+    margin: 0px;
+    border: 1px, solid, rgb(201, 78, 78);
+    padding: 5px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+a:hover {
+    
+    color: hsl(39, 96%, 68%);
+}
