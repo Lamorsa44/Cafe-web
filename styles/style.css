@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .material-symbols-rounded {
     font-variation-settings:
@@ -9,7 +10,7 @@
 }
 
 body {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     max-width: 100%;
     font-family: "Red Hat Display";
@@ -22,7 +23,9 @@ body {
     min-height: 25em;
     max-width: 100%;
     max-height: 100%;
-    background: url("https://www.simplycoffeeshops.co.uk/wp-content/uploads/2021/02/petr-sevcovic-qe1jxyxiwoa-unsplash-scaled.jpg");
+    background: radial-gradient(rgba(0, 0, 0, 0.05), black), url("https://www.simplycoffeeshops.co.uk/wp-content/uploads/2021/02/petr-sevcovic-qe1jxyxiwoa-unsplash-scaled.jpg"); 
+    justify-content: start;
+    align-items: center;
     background-size: cover;
 }
 
@@ -64,24 +67,46 @@ a:hover {
 
 div img {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 div > img {
     display: flex;
+    position: fixed;
     overflow: clip;
     max-width: 100%;
     filter: blur(1px);
 }
 
-.logo {
+hero div {
     display: flex;
-    border: 2px solid black;
+    position: fixed;
+    align-items: center;
+    align-content: start;
+}
+
+.logo {
+    color: hsl(39, 96%, 68%);
+    display: flex;
+    padding: 10px;
+    font-family: "Merriweather";
+    font-style: italic;
+    font-size: 2em;
+    text-decoration: underline;
+    text-underline-offset: 15%;
+    text-shadow: 1px 1px 4px black;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.logo:hover {
+    margin-bottom: 10%;
 }
 
 footer {
     display: flex;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#61422f , rgba(0, 0, 0, 0.822) 90%);
     align-content: space-around;
 }
 
@@ -92,6 +117,11 @@ footer div {
     align-content: space-around;
     align-items: center;
     overflow: auto;
+    transition-duration: .5s;
+}
+
+.left div:hover {
+    color: hsl(39, 96%, 68%);;
 }
 
 footer span {
@@ -101,7 +131,6 @@ footer span {
 footer a {
     display: block;
     align-content: end;
-    color: black;
     text-align: center;
     margin: 2px;
     padding: .5em;
