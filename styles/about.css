@@ -17,6 +17,7 @@ html {
 
 body {
     display: flex;
+    background-color: #614E42;
     flex-direction: column;
     max-width: 100%;
     font-family: "Red Hat Display";
@@ -41,22 +42,10 @@ a {
     text-decoration-line: none;
 }
 
-.hero {
-    display: flex;
-    min-height: 80vh;
-    max-width: 100%;
-    max-height: 100%;
-    background: radial-gradient(ellipse at center, #0000000d, black), url("https://www.simplycoffeeshops.co.uk/wp-content/uploads/2021/02/petr-sevcovic-qe1jxyxiwoa-unsplash-scaled.jpg"); 
-    justify-content: start;
-    align-items: center;
-    background-size: cover;
-}
-
-
 header {
     display: flex;
-    border: 0px solid #f57c90;
-    background: radial-gradient(ellipse at center, rgba(34, 34, 34, 0), black), 
+    border: 0px solid rgb(245, 124, 144);
+    background: radial-gradient(ellipse at center, #22222200, black), 
     url("/resources/coffe-banner-good.jpg");
     background-size: auto, cover;
     align-items: center;
@@ -92,52 +81,31 @@ nav > a {
 }
 
 a:hover {
+    color: #fcc55f;
+}
+
+.content {
+    min-height: 80vh;
     color: #FCC969;
+    padding: 1em;
 }
 
-div img {
+.content div {
     display: flex;
-}
-
-div > img {
-    display: flex;
-    position: fixed;
     overflow: clip;
+    justify-content: center;
     max-width: 100%;
-    filter: blur(1px);
-}
-
-hero div {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    align-content: start;
-}
-
-.logo {
-    color: hsl(39, 96%, 68%);
-    display: flex;
-    padding: 10px;
-    font-family: "Merriweather";
-    font-style: italic;
-    font-size: 2em;
-    text-decoration: underline;
-    text-underline-offset: 15%;
-    text-shadow: 1px 1px 4px black;
-    transition-duration: 1s;
-    transition-property: all;
-    transition-timing-function: ease;
-}
-
-.logo:hover {
-    margin-bottom: 10%;
+    max-height: 100%;
+    
 }
 
 footer {
     display: flex;
     max-height: 100%;
+    font-size: 100%;
     color: #FFB638;
     background: radial-gradient(ellipse, #40322B 90%, #000000);  
+    align-content: space-between;
     justify-content: space-between;
     overflow: auto;
 }
@@ -145,9 +113,10 @@ footer {
 
 footer div {
     display: flex;
-    justify-content: space-around;
-    padding: .1rem;
-    overflow: auto;
+    justify-content: center;
+    overflow: clip;
+    margin-left: .1em;
+    margin-right: .5em;
     transition-duration: .5s;
 }
 
@@ -159,8 +128,8 @@ footer span {
 footer a {
     display: block;
     text-align: center;
-    padding: .5rem;
     margin: .5rem;
+    padding: .5em;
     text-decoration: none;
     transition-duration: 1s;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -184,7 +153,6 @@ li span {
     display: flex;
     width: auto;
     align-items: start;
-    align-content: start;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -202,6 +170,6 @@ li span {
     width: auto;
     align-items: end;
     align-content: end;
-    margin: .5rem;
     flex-direction: column;
+    justify-content: space-around;
 }
