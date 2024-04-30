@@ -9,6 +9,12 @@
     'opsz' 20
 }
 
+html {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
 body {
     display: flex;
     background-color: #614E42;
@@ -17,7 +23,19 @@ body {
     font-family: "Red Hat Display";
     font-weight: 500;
     margin: 0px;
-    transition: all;
+    transition-property: all;
+}
+
+@media (width > 1000px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (width < 300px) {
+    html {
+        font-size: 90%;
+    }
 }
 
 a {
@@ -30,30 +48,112 @@ header {
     background: radial-gradient(ellipse at center, #22222200, black), 
     url("/resources/coffe-banner-good.jpg");
     background-size: auto, cover;
+    align-items: center;
 }
 
 nav { 
     display: flex;
+    min-height: 5vh;
+    max-height: 10vh;
     width: 100%;
-    overflow: auto;
+    height: 100%;
+    overflow: wrap;
     justify-content: space-around;
+    align-content: space-around;
     text-align: center;
-    margin: 0px;
-    padding: 1em;
+    align-items: center;
+    margin: .5rem;
+    padding: 0rem;
     border: 0px solid black;
 }
 
 nav > a {
     color: #FFB638;
-    margin: 0px;
-    border: 1px, solid, #c94e4e;
-    padding: 5px;
+    margin: .5rem;
+    border: 0px, solid, #c94e4e;
+    padding: .2rem;
+    height: 100%;
+    width: 100%;
     transition-property: color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+}
+/* end of header */
+
+
+/* footer */
+footer {
+    display: flex;
+    max-height: 100%;
+    font-size: 100%;
+    color: #FFB638;
+    background: radial-gradient(ellipse, #40322B 90%, #000000);  
+    align-content: space-between;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+
+footer div {
+    display: flex;
+    justify-content: center;
+    overflow: clip;
+    margin-left: .1em;
+    margin-right: .5em;
+    transition-duration: .5s;
+}
+
+footer span {
+    padding: .3em;
+    min-height: fit-content;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    margin: .5rem;
+    padding: .5em;
+    text-decoration: none;
+    transition-duration: 1s;
+    border: 1px solid rgba(0, 0, 0, 0);
 
 }
 
-a:hover {
-    color: #fcc55f;
+footer a:hover {
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+li span {
+    margin: 4px;
+}
+
+.left {
+    display: flex;
+    width: auto;
+    align-items: start;
+    align-content: start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left div {
+    align-items: center;
+}
+
+.left div:hover {
+    color: #FCC969;;
+}
+
+.right {
+    display: flex;
+    width: auto;
+    align-items: end;
+    align-content: end;
+    flex-direction: column;
+    justify-content: space-around;
 }

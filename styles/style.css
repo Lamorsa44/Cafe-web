@@ -52,7 +52,6 @@ a {
     background-size: cover;
 }
 
-
 header {
     display: flex;
     border: 0px solid #f57c90;
@@ -68,7 +67,7 @@ nav {
     max-height: 10vh;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: wrap;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
@@ -202,6 +201,6 @@ li span {
     width: auto;
     align-items: end;
     align-content: end;
-    margin: .5rem;
     flex-direction: column;
+    justify-content: space-around;
 }
