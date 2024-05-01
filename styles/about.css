@@ -17,7 +17,7 @@ html {
 
 body {
     display: flex;
-    background-color: #614E42;
+    background: linear-gradient(#000000 , #614E42 8%);
     flex-direction: column;
     max-width: 100%;
     font-family: "Red Hat Display";
@@ -49,6 +49,7 @@ header {
     url("/resources/coffe-banner-good.jpg");
     background-size: auto, cover;
     align-items: center;
+    text-shadow: 1px 1px 4px black;
 }
 
 nav { 

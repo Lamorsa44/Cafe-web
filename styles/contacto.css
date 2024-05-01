@@ -24,6 +24,7 @@ body {
     font-weight: 500;
     margin: 0px;
     transition-property: all;
+    color: #FFB638;
 }
 
 @media (width > 1000px) {
@@ -49,6 +50,7 @@ header {
     url("/resources/coffe-banner-good.jpg");
     background-size: auto, cover;
     align-items: center;
+    text-shadow: 1px 1px 4px black;
 }
 
 nav { 
@@ -79,7 +81,31 @@ nav > a {
     transition-timing-function: ease-in-out;
 }
 /* end of header */
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+form label {
+    margin: .5rem;
+}
+form input {
+    background-color: transparent;
+    border: 1px solid black;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+#submit {
+    background-color: aquamarine;
+}
 
 /* footer */
 footer {
